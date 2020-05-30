@@ -77,7 +77,7 @@ export function getOpts({ghc, cabal, stack}: Defaults): Options {
     cabal: {
       raw: verInpt.cabal,
       resolved: resolve(verInpt.cabal, cabal.supported),
-      enable: !stackNoGlobal
+      enable: false
     },
     stack: {
       raw: verInpt.stack,

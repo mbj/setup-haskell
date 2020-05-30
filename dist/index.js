@@ -789,7 +789,7 @@ function getOpts({ ghc, cabal, stack }) {
         cabal: {
             raw: verInpt.cabal,
             resolved: resolve(verInpt.cabal, cabal.supported),
-            enable: !stackNoGlobal
+            enable: false
         },
         stack: {
             raw: verInpt.stack,
